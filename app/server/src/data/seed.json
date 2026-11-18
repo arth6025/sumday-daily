@@ -1,0 +1,1760 @@
+{
+ "note": "Demo catalogue extracted from prototype/index.html. Prices, dates and tips are demo data. Media credits are real (Wikimedia Commons).",
+ "experiences": [
+  {
+   "id": "lapland",
+   "name": "Northern lights in Lapland",
+   "place": "Finnish Lapland",
+   "country": "Finland",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Aurora",
+    "Snow"
+   ],
+   "bestMonths": "Dec – Mar",
+   "expectedMonth": "2027-02",
+   "nights": 6,
+   "cost": 125000,
+   "costSplit": {
+    "flights": 38,
+    "stay": 30,
+    "experience": 22,
+    "food": 10
+   },
+   "hooks": [
+    "The night the whole sky turned green over a frozen lake.",
+    "Husky sled at 2pm, aurora at 11pm. That was one Tuesday.",
+    "Glass-roof cabins where the sky does the entertaining."
+   ],
+   "tips": [
+    "Aurora odds go up away from town lights. Most hunts drive 30 to 60 minutes out.",
+    "Rent thermal overalls there instead of buying them. Most lodges include boots.",
+    "Book a cabin with a no-cloud refund. Some lodges move you to another night free."
+   ],
+   "editorNote": "Pack a thermos. You will stand outside longer than you think.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/lapland_3.jpg",
+     "shape": "4:5",
+     "credit": "Ximonic (Simo Räsänen)",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Northern_lights_band_swirls_above_Vuopajanniemi,_Inari,_Lapland,_Finland,_2018_March.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/lapland_2.jpg",
+     "shape": "4:5",
+     "credit": "Ximonic (Simo Räsänen)",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Gentle_but_wide_green_aurora_display_over_Tuikku,_Kittil%C3%A4,_Lapland,_Finland,_2023_September.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/lapland_1.jpg",
+     "shape": "4:5",
+     "credit": "Ximonic (Simo Räsänen)",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Gentle_but_wide_green_aurora_display_over_Levi,_Kittil%C3%A4,_Lapland,_Finland,_2023_September_-_2.jpg"
+    }
+   ]
+  },
+  {
+   "id": "varkala",
+   "name": "Varkala, first waves",
+   "place": "Varkala, Kerala",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Surfing",
+    "Beaches"
+   ],
+   "bestMonths": "Nov – Mar",
+   "expectedMonth": "2027-01",
+   "nights": 5,
+   "cost": 24000,
+   "costSplit": {
+    "flights": 30,
+    "stay": 35,
+    "experience": 20,
+    "food": 15
+   },
+   "hooks": [
+    "Five mornings of surf school on red cliffs.",
+    "Learned to stand up on day three. Cried a little.",
+    "The cliff café crawl nobody puts in the itinerary."
+   ],
+   "tips": [
+    "Beginner breaks are gentler November to February. Monsoon swell is for confident surfers.",
+    "Stay on the North Cliff for cafés, Odayam beach for quiet.",
+    "A five-day surf course usually includes the board and rash guard."
+   ],
+   "editorNote": "Sunset from the cliff top is the whole evening plan. Nobody leaves early.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/varkala_6.jpg",
+     "shape": "4:5",
+     "credit": "Ganesh Mohan T",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Varkala_cliff_01.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/varkala_3.jpg",
+     "shape": "4:5",
+     "credit": "Krissubh",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Varkala_Cliff_Sunset_by_KS.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/varkala_4.jpg",
+     "shape": "4:5",
+     "credit": "Krissubh",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Varkala_Cliff_by_KS.jpg"
+    }
+   ]
+  },
+  {
+   "id": "alleppey",
+   "name": "Houseboat, Alleppey",
+   "place": "Alappuzha, Kerala",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Slow trips"
+   ],
+   "bestMonths": "Aug – Mar",
+   "expectedMonth": "2027-02",
+   "nights": 2,
+   "cost": 18500,
+   "costSplit": {
+    "flights": 25,
+    "stay": 55,
+    "experience": 10,
+    "food": 10
+   },
+   "hooks": [
+    "Two days of doing nothing on the backwaters.",
+    "Karimeen fry, a hammock and zero signal.",
+    "The quieter canals the big boats can't enter."
+   ],
+   "tips": [
+    "Houseboats anchor by early evening, so board before noon to get the full day.",
+    "A shikara ride gets you into the narrow canals the big boats can't enter.",
+    "Ask for a boat that cooks local. Most kitchens will do appam and stew."
+   ],
+   "editorNote": "Ask the crew to cut the engine for an hour. The silence is the point.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/alleppey_0.jpg",
+     "shape": "4:5",
+     "credit": "Ingo Mehling",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Nedumudy_-_Houseboat.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/alleppey_5.jpg",
+     "shape": "4:5",
+     "credit": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Kerala_backwaters,_Houseboats,_India.jpg"
+    }
+   ]
+  },
+  {
+   "id": "spiti",
+   "name": "Winter Spiti",
+   "place": "Spiti Valley, Himachal",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Snow",
+    "Road trips"
+   ],
+   "bestMonths": "Jan – Feb",
+   "expectedMonth": "2027-01",
+   "nights": 7,
+   "cost": 42000,
+   "costSplit": {
+    "flights": 20,
+    "stay": 30,
+    "experience": 35,
+    "food": 15
+   },
+   "hooks": [
+    "Minus 20, a homestay stove, the best chai of your life.",
+    "A monastery on a hill, and nobody else there.",
+    "Snow leopard country, by shared taxi."
+   ],
+   "tips": [
+    "In winter the road goes in from Shimla. The Manali side stays closed till late spring.",
+    "Homestays in Kaza and Langza keep running in winter. Carry cash.",
+    "Give yourself a buffer day both ends. Snowfall can close the road."
+   ],
+   "editorNote": "The cold is dry. Two good layers beat one huge jacket.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/spiti_1.jpg",
+     "shape": "4:5",
+     "credit": "Ksuryawanshi",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Kee_monastery_Spiti_Valley.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/spiti_4.jpg",
+     "shape": "4:5",
+     "credit": "Prasad Gaude",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Key_Monastery_-_Spiti_-Himachal_Pradesh_MG_6796.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/spiti_0.jpg",
+     "shape": "4:5",
+     "credit": "Deepank Ranka",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Dhankar_Gompa,_Spiti.jpg"
+    }
+   ]
+  },
+  {
+   "id": "cappadocia",
+   "name": "Balloons over Cappadocia",
+   "place": "Göreme, Türkiye",
+   "country": "Türkiye",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Ballooning"
+   ],
+   "bestMonths": "Apr – Jun, Sep – Oct",
+   "expectedMonth": "2027-05",
+   "nights": 6,
+   "cost": 110000,
+   "costSplit": {
+    "flights": 40,
+    "stay": 25,
+    "experience": 25,
+    "food": 10
+   },
+   "hooks": [
+    "A hundred balloons rising at once over the valleys.",
+    "Cave hotel, terrace breakfast, a sky full of balloons.",
+    "Is the balloon ride worth it? The full breakdown."
+   ],
+   "tips": [
+    "Flights get cancelled for wind. Book the ride for your first morning so you have backup days.",
+    "Even without flying, the sunrise view from the town terraces is free.",
+    "Walk Rose Valley at sunset. It's the best free thing in the region."
+   ],
+   "editorNote": "Even from the ground, dawn here is a show.",
+   "media": [
+    {
+     "kind": "video",
+     "src": "media/cappadocia_b.mp4",
+     "poster": "media/cappadocia_b_poster.jpg",
+     "credit": "yasin ilcebay",
+     "licence": "CC BY 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Cappadocia_4K_-_TURKEY.webm"
+    },
+    {
+     "kind": "video",
+     "src": "media/cappadocia.mp4",
+     "poster": "media/cappadocia_poster.jpg",
+     "credit": "yasin ilcebay",
+     "licence": "CC BY 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Cappadocia_4K_-_TURKEY.webm"
+    },
+    {
+     "kind": "photo",
+     "src": "media/cappadocia_7.jpg",
+     "shape": "4:5",
+     "credit": "Wolfgang Moroder",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_ride_at_sunrise_in_Cappadocia.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/cappadocia_6.jpg",
+     "shape": "4:5",
+     "credit": "MusikAnimal",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_over_Cappadocia,_Turkey.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/cappadocia_1.jpg",
+     "shape": "4:5",
+     "credit": "MusikAnimal",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_at_sunrise_over_Cappadocia,_Turkey.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/cappadocia_0.jpg",
+     "shape": "9:16",
+     "credit": "José Luiz",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Balloons_over_Goreme.JPG"
+    }
+   ]
+  },
+  {
+   "id": "kyoto",
+   "name": "Kyoto in maple season",
+   "place": "Kyoto, Japan",
+   "country": "Japan",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Culture"
+   ],
+   "bestMonths": "Mid Nov – early Dec",
+   "expectedMonth": "2027-11",
+   "nights": 8,
+   "cost": 185000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 35,
+    "experience": 15,
+    "food": 15
+   },
+   "hooks": [
+    "Red maples, wooden temples, one very slow week.",
+    "The temple garden that's worth the 6am alarm.",
+    "Kyoto on ₹20k a day, with one ryokan night."
+   ],
+   "tips": [
+    "Maple colour usually peaks late November. Famous gardens are calmest at opening time.",
+    "Get an IC card on arrival. Buses and trains run on it.",
+    "One ryokan night with a kaiseki dinner is the splurge most people say was worth it."
+   ],
+   "editorNote": "Go at opening time. By ten the paths are shoulder to shoulder.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/kyoto_7.jpg",
+     "shape": "4:5",
+     "credit": "Martin Falbisoner",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/kyoto_2.jpg",
+     "shape": "4:5",
+     "credit": "Martin Falbisoner",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Eikan-do_Zenrin-ji,_November_2016_-03.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/kyoto_3.jpg",
+     "shape": "9:16",
+     "credit": "Martin Falbisoner",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Eikan-do_Zenrin-ji,_November_2016_-04.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/kyoto_1.jpg",
+     "shape": "9:16",
+     "credit": "Martin Falbisoner",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Eikan-do_Zenrin-ji,_November_2016_-02.jpg"
+    }
+   ]
+  },
+  {
+   "id": "hampi",
+   "name": "Hampi sunrise",
+   "place": "Hampi, Karnataka",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Culture"
+   ],
+   "bestMonths": "Oct – Feb",
+   "expectedMonth": "2027-01",
+   "nights": 3,
+   "cost": 14500,
+   "costSplit": {
+    "flights": 30,
+    "stay": 35,
+    "experience": 15,
+    "food": 20
+   },
+   "hooks": [
+    "A whole kingdom of ruins and boulders.",
+    "Sunrise from a hilltop temple, before anyone else.",
+    "Coracles and cycling between ruins."
+   ],
+   "tips": [
+    "Climb Matanga Hill before 6am for sunrise over the ruins.",
+    "Rent a bicycle or scooter. The ruins spread over a large area.",
+    "Hospet is the nearest railway station, about 13 km away."
+   ],
+   "editorNote": "Rent the bicycle. Every corner has another temple.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/hampi_7.jpg",
+     "shape": "4:5",
+     "credit": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Hampi,_India,_Huge_granite_rock_boulders_amidst_palm_trees_in_Hampi_landscape.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/hampi_0.jpg",
+     "shape": "4:5",
+     "credit": "iMahesh",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:A_temple_under_the_hill_on_Hemakunta_complex.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/hampi_4.jpg",
+     "shape": "4:5",
+     "credit": "iMahesh",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:People_walking_uphill_from_Virupaksha_temple.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/hampi_6.jpg",
+     "shape": "4:5",
+     "credit": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Hampi,_India,_Granite_boulders_on_Matanga_Hill.jpg"
+    }
+   ]
+  },
+  {
+   "id": "ubud",
+   "name": "Ubud and the rice terraces",
+   "place": "Bali, Indonesia",
+   "country": "Indonesia",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Slow trips",
+    "Culture"
+   ],
+   "bestMonths": "Apr – Oct",
+   "expectedMonth": "2027-07",
+   "nights": 6,
+   "cost": 78000,
+   "costSplit": {
+    "flights": 40,
+    "stay": 30,
+    "experience": 15,
+    "food": 15
+   },
+   "hooks": [
+    "A villa above the terraces for less than a Goa week.",
+    "Six days in Ubud without a single beach.",
+    "Green on green on green."
+   ],
+   "tips": [
+    "Tegallalang is crowded by 9am. Jatiluwih is wider and calmer.",
+    "Ride a scooter only if you've ridden before. Drivers by the day are cheap.",
+    "Indians can get a visa on arrival. Check the current fee before you fly."
+   ],
+   "editorNote": "Walk the terraces before breakfast, while the light is soft.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/ubud_4.jpg",
+     "shape": "4:5",
+     "credit": "Freddy eduardo",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Tegalalang_Rice_Terraces.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/ubud_0.jpg",
+     "shape": "4:5",
+     "credit": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Rice_terraces,_Bali.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/ubud_5.jpg",
+     "shape": "4:5",
+     "credit": "Pinterpandai",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terrace.jpg"
+    }
+   ]
+  },
+  {
+   "id": "dolomites",
+   "name": "Hut to hut in the Dolomites",
+   "place": "South Tyrol, Italy",
+   "country": "Italy",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Trekking"
+   ],
+   "bestMonths": "Late Jun – Sep",
+   "expectedMonth": "2027-08",
+   "nights": 7,
+   "cost": 210000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 35,
+    "experience": 15,
+    "food": 15
+   },
+   "hooks": [
+    "Seven days walking between mountain huts.",
+    "Strudel at 2,400 metres.",
+    "The Dolomites in a week, for normal legs."
+   ],
+   "tips": [
+    "Mountain huts open from late June to September. Book half-board months ahead.",
+    "You can do the trail with a daypack. Huts give you dinner and a bunk.",
+    "Cable cars let you skip the hardest climbs if your knees complain."
+   ],
+   "editorNote": "Book the huts first. Everything else falls into place after.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/dolomites_1.jpg",
+     "shape": "4:5",
+     "credit": "Ximonic (Simo Räsänen)",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Croda_dei_Toni_and_Tre_Cime_di_Lavaredo_from_Monte_Specie,_Val_Pusteria,_Trentino-Alto_Adige,_Italy,_2025_October.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/dolomites_6.jpg",
+     "shape": "4:5",
+     "credit": "kallerna",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Lago_di_Misurina_Tre_Cime_di_Lavaredo_1.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/dolomites_0.jpg",
+     "shape": "4:5",
+     "credit": "kallerna",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Cadini_di_Misurina_Lavaredo_3.jpg"
+    }
+   ]
+  },
+  {
+   "id": "meghalaya",
+   "name": "Living root bridges",
+   "place": "Nongriat, Meghalaya",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Trekking"
+   ],
+   "bestMonths": "Oct – Apr",
+   "expectedMonth": "2027-03",
+   "nights": 5,
+   "cost": 26000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 30,
+    "experience": 15,
+    "food": 20
+   },
+   "hooks": [
+    "A bridge grown out of tree roots.",
+    "Natural pools at the end of 3,000 steps.",
+    "Cherrapunji in the clouds."
+   ],
+   "tips": [
+    "The double-decker bridge is about 3,000 steps down from Tyrna. Stay the night in Nongriat.",
+    "Carry a light rain jacket even in winter.",
+    "Shillong to Cherrapunji is about two hours by road."
+   ],
+   "editorNote": "The steps down are easy. The steps back up are the trip.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/meghalaya_0.jpg",
+     "shape": "4:5",
+     "credit": "Chiranjeeb Baul",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Double_decker_living_root_bridge_02.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/meghalaya_1.jpg",
+     "shape": "4:5",
+     "credit": "Joydeep Chakraborty",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Living_root_bridge,_Maghalaya,_India1.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/meghalaya_4.jpg",
+     "shape": "9:16",
+     "credit": "Joydeep Chakraborty",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Living_root_bridge,_Maghalaya,_India4.jpg"
+    }
+   ]
+  },
+  {
+   "id": "ladakh",
+   "name": "Pangong under the stars",
+   "place": "Ladakh",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Road trips"
+   ],
+   "bestMonths": "Jun – Sep",
+   "expectedMonth": "2027-07",
+   "nights": 6,
+   "cost": 48000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 30,
+    "experience": 20,
+    "food": 15
+   },
+   "hooks": [
+    "A lake that changes colour by the hour.",
+    "Blue you have to see to believe.",
+    "The Leh loop for first-timers."
+   ],
+   "tips": [
+    "Spend two easy nights in Leh before going higher. Altitude sickness is real.",
+    "Lakeside camps get cold at night even in summer.",
+    "Some areas need an inner line permit. Most hotels in Leh arrange it."
+   ],
+   "editorNote": "Take day two slow. Altitude catches everyone.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/ladakh_5.jpg",
+     "shape": "4:5",
+     "credit": "Neek-Theri",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Pangong_Tso_Lake_1.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/ladakh_1.jpg",
+     "shape": "4:5",
+     "credit": "Fulvio Spada",
+     "licence": "CC BY-SA 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Late_afternoon_at_the_Pangong_Tso_(10035239163).jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/ladakh_6.jpg",
+     "shape": "4:5",
+     "credit": "Stanzin1945",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Pangong_Tso_in_eastern_Ladakh(Changthang).jpg"
+    }
+   ]
+  },
+  {
+   "id": "halong",
+   "name": "Junk cruise, Ha Long Bay",
+   "place": "Quang Ninh, Vietnam",
+   "country": "Vietnam",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Sailing"
+   ],
+   "bestMonths": "Oct – Apr",
+   "expectedMonth": "2027-03",
+   "nights": 7,
+   "cost": 92000,
+   "costSplit": {
+    "flights": 40,
+    "stay": 30,
+    "experience": 20,
+    "food": 10
+   },
+   "hooks": [
+    "Kayaking between limestone towers.",
+    "Overnight on the bay, breakfast on deck.",
+    "Hanoi street food and two nights on the water."
+   ],
+   "tips": [
+    "Overnight cruises into Lan Ha Bay are quieter than the main route.",
+    "Combine with Hanoi. The drive to the bay is a few hours.",
+    "Spring and autumn have the clearest skies on the water."
+   ],
+   "editorNote": "Sleep on the boat. Morning on the bay is the reason to go.",
+   "media": [
+    {
+     "kind": "video",
+     "src": "media/halong.mp4",
+     "poster": "media/halong_poster.jpg",
+     "credit": "പയ്യൻ",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Ha_Long_Bay,_Vietnam_-_Dec_2024.webm"
+    },
+    {
+     "kind": "video",
+     "src": "media/halong_b.mp4",
+     "poster": "media/halong_b_poster.jpg",
+     "credit": "L. Shyamal",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Ha_Long_cruise_20220731_180024568.webm"
+    },
+    {
+     "kind": "photo",
+     "src": "media/halong_7.jpg",
+     "shape": "4:5",
+     "credit": "Jakub Hałun",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:View_of_sea_from_Titov_Island,_Ha_Long_Bay,_Vietnam,_20240128_1337_3732.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/halong_3.jpg",
+     "shape": "4:5",
+     "credit": "Steven C. Price",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Ha-Long-Bay3.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/halong_1.jpg",
+     "shape": "4:5",
+     "credit": "Jakub Hałun",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Cat_Ba_Island,_Vietnam,_20240131_1431_4699.jpg"
+    }
+   ]
+  },
+  {
+   "id": "jaisalmer",
+   "name": "Desert camp, Jaisalmer",
+   "place": "Jaisalmer, Rajasthan",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Desert"
+   ],
+   "bestMonths": "Oct – Mar",
+   "expectedMonth": "2027-02",
+   "nights": 3,
+   "cost": 19500,
+   "costSplit": {
+    "flights": 30,
+    "stay": 40,
+    "experience": 15,
+    "food": 15
+   },
+   "hooks": [
+    "Dune sunset, folk music, a bed under the stars.",
+    "Gold in every direction.",
+    "Camel or jeep: what the dunes are really like."
+   ],
+   "tips": [
+    "The dunes close to town get busy. Camps further out are quieter.",
+    "Desert nights get cold in winter. Ask for extra blankets.",
+    "Walk the living fort in the morning before the heat."
+   ],
+   "editorNote": "Stay out past dinner. The stars come out all at once.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/jaisalmer_0.jpg",
+     "shape": "4:5",
+     "credit": "Xaby",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Jaisalmer,_Thar_Desert.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/jaisalmer_4.jpg",
+     "shape": "4:5",
+     "credit": "Ashwin Kumar",
+     "licence": "CC BY-SA 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Jaisalmer_(4446304630).jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/jaisalmer_5.jpg",
+     "shape": "4:5",
+     "credit": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Thar_Desert,_India,_Camel.jpg"
+    }
+   ]
+  },
+  {
+   "id": "iceland",
+   "name": "Iceland ring road",
+   "place": "Iceland",
+   "country": "Iceland",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Road trips"
+   ],
+   "bestMonths": "Jun – Aug",
+   "expectedMonth": "2027-07",
+   "nights": 9,
+   "cost": 260000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 35,
+    "experience": 20,
+    "food": 10
+   },
+   "hooks": [
+    "A waterfall every hour on the ring road.",
+    "You can feel the spray from the car park.",
+    "Hot springs at midnight in summer."
+   ],
+   "tips": [
+    "Summer is easiest for the full loop. In winter the days are short and you need a 4x4.",
+    "Groceries and a campervan cut the cost a lot.",
+    "Petrol stations thin out in the east. Fill up when you can."
+   ],
+   "editorNote": "Bring a rain shell for the waterfalls. You will get wet.",
+   "media": [
+    {
+     "kind": "video",
+     "src": "media/iceland.mp4",
+     "poster": "media/iceland_poster.jpg",
+     "credit": "Alexander Grebenkov",
+     "licence": "CC BY 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Sk%C3%B3gafoss_waterfall_in_Iceland.webm"
+    },
+    {
+     "kind": "photo",
+     "src": "media/iceland_4.jpg",
+     "shape": "4:5",
+     "credit": "Martin Falbisoner",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Sk%C3%B3gafoss_July_2014.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/iceland_6.jpg",
+     "shape": "9:16",
+     "credit": "Jakub Hałun",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Sk%C3%B3gafoss_Waterfall,_Iceland,_20240720_1319_2978.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/iceland_1.jpg",
+     "shape": "9:16",
+     "credit": "Jakub Hałun",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Sk%C3%B3gafoss,_Iceland,_20230501_1445_3970.jpg"
+    }
+   ]
+  },
+  {
+   "id": "andaman",
+   "name": "Learn to dive, Andamans",
+   "place": "Havelock, Andaman Islands",
+   "country": "India",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Scuba",
+    "Beaches"
+   ],
+   "bestMonths": "Nov – Apr",
+   "expectedMonth": "2027-03",
+   "nights": 5,
+   "cost": 58000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 25,
+    "experience": 30,
+    "food": 10
+   },
+   "hooks": [
+    "Get your diving licence in four days.",
+    "Turquoise water and a hammock.",
+    "Radhanagar beach at sunset."
+   ],
+   "tips": [
+    "A beginner diving course takes three to four days. Book a certified dive school.",
+    "Don't fly within 18 hours of your last dive.",
+    "Ferries from Port Blair sell out. Book ahead."
+   ],
+   "editorNote": "The water is clearest in the morning, before the wind.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/andaman_dive_0.jpg",
+     "shape": "4:5",
+     "credit": "AshwiniShinde",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Ocean_Tribe_Scuba_Diving_Havelock.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/andaman_dive_1.jpg",
+     "shape": "4:5",
+     "credit": "Subro89",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Floaters_@_Andaman.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/andaman_2.jpg",
+     "shape": "4:5",
+     "credit": "Vinayaraj",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Radhanagar_Beach_Havelock_vrvbaan042k24_(11).jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/andaman_0.jpg",
+     "shape": "4:5",
+     "credit": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Havelock_Island,_Radhanagar_Beach_before_sunset,_Andaman_Islands.jpg"
+    }
+   ]
+  },
+  {
+   "id": "fontainebleau",
+   "name": "Bouldering in Fontainebleau",
+   "place": "Fontainebleau, France",
+   "country": "France",
+   "categories": [
+    "Travel",
+    "Fitness"
+   ],
+   "activities": [
+    "Bouldering"
+   ],
+   "bestMonths": "Mar – May, Sep – Oct",
+   "expectedMonth": "2027-04",
+   "nights": 6,
+   "cost": 115000,
+   "costSplit": {
+    "flights": 45,
+    "stay": 30,
+    "experience": 10,
+    "food": 15
+   },
+   "hooks": [
+    "A whole forest of boulders, an hour from Paris.",
+    "Pads down, chalk up, six days of problems.",
+    "Where bouldering was more or less invented."
+   ],
+   "tips": [
+    "The sandstone is fragile when wet. Wait a day after rain before you climb.",
+    "Circuits are marked with coloured arrows by difficulty, so you can follow one all morning.",
+    "Stay in a village by the forest and rent crash pads there instead of flying with them."
+   ],
+   "editorNote": "Bring tape for your fingers. The sandstone is sharper than it looks.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/fontainebleau_0.jpg",
+     "shape": "4:5",
+     "credit": "Romary",
+     "licence": "CC BY 2.5",
+     "source": "https://commons.wikimedia.org/wiki/File:Fontainebleau_91_1.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/fontainebleau_1.jpg",
+     "shape": "4:5",
+     "credit": "Jerome Bon",
+     "licence": "CC BY 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Escalade_%C3%A0_Fontainebleau_(14255556941).jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/fontainebleau_2.jpg",
+     "shape": "4:5",
+     "credit": "Jerome Bon",
+     "licence": "CC BY 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Escalade_%C3%A0_Fontainebleau_(14235729356).jpg"
+    }
+   ]
+  },
+  {
+   "id": "rhodes",
+   "name": "Sailing the Dodecanese",
+   "place": "Rhodes, Greece",
+   "country": "Greece",
+   "categories": [
+    "Travel"
+   ],
+   "activities": [
+    "Sailing"
+   ],
+   "bestMonths": "May – Jun, Sep",
+   "expectedMonth": "2027-09",
+   "nights": 7,
+   "cost": 165000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 45,
+    "experience": 10,
+    "food": 10
+   },
+   "hooks": [
+    "A week on a boat, a new bay every night.",
+    "Anchor, swim, lunch, repeat.",
+    "Six friends, one skipper, no hotel."
+   ],
+   "tips": [
+    "The meltemi wind blows hard in July and August. Early or late summer is gentler.",
+    "Book a skippered boat and nobody needs a sailing licence.",
+    "Split a boat six ways and it can cost less than island hotels."
+   ],
+   "editorNote": "Pack light. There is less room on a boat than you imagine.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/rhodes_0.jpg",
+     "shape": "4:5",
+     "credit": "Ввласенко",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Yacht_Infinity_in_a_bay_near_Ladiko._Rhodes,_Greece.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/rhodes_1.jpg",
+     "shape": "4:5",
+     "credit": "Ввласенко",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Yachts_in_the_St._Paul_bay._Rhodes,_Greece.jpg"
+    }
+   ]
+  },
+  {
+   "id": "annapurna",
+   "name": "Annapurna Base Camp trek",
+   "place": "Annapurna, Nepal",
+   "country": "Nepal",
+   "categories": [
+    "Travel",
+    "Fitness"
+   ],
+   "activities": [
+    "Trekking"
+   ],
+   "bestMonths": "Mar – May, Oct – Nov",
+   "expectedMonth": "2027-10",
+   "nights": 10,
+   "cost": 70000,
+   "costSplit": {
+    "flights": 25,
+    "stay": 30,
+    "experience": 35,
+    "food": 10
+   },
+   "hooks": [
+    "Ten days on foot to a ring of 8,000-metre peaks.",
+    "Teahouse to teahouse, dal bhat every night.",
+    "Machhapuchhre at sunrise, from the trail."
+   ],
+   "tips": [
+    "Teahouses along the route mean you carry a light pack.",
+    "Permit and guide rules change. Check the current ones before you book.",
+    "Build in a spare day for weather on the way up."
+   ],
+   "editorNote": "Slow is fast up here. Walk at a pace you can talk at.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/annapurna_0.jpg",
+     "shape": "4:5",
+     "credit": "Bijay Chaurasia",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Machhapuchhre_or_Fishtail_Mountain_6,993_m_(22,943_ft)-_IMG_5246.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/annapurna_1.jpg",
+     "shape": "4:5",
+     "credit": "Bijay Chaurasia",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Annapurna_Massif-IMG_5221-Pano.jpg"
+    }
+   ]
+  },
+  {
+   "id": "bir",
+   "name": "Fly at Bir Billing",
+   "place": "Bir, Himachal Pradesh",
+   "country": "India",
+   "categories": [
+    "Travel",
+    "Fitness"
+   ],
+   "activities": [
+    "Paragliding"
+   ],
+   "bestMonths": "Oct – Nov, Mar – May",
+   "expectedMonth": "2027-03",
+   "nights": 3,
+   "cost": 15000,
+   "costSplit": {
+    "flights": 30,
+    "stay": 30,
+    "experience": 30,
+    "food": 10
+   },
+   "hooks": [
+    "Take off at Billing, land in Bir, grin for a week.",
+    "Twenty minutes above the Kangra valley.",
+    "India's paragliding capital, on a long weekend."
+   ],
+   "tips": [
+    "Tandem flights take off from Billing and land in Bir.",
+    "Mornings are calmer. Flights stop when the wind picks up.",
+    "Pick an operator registered with the state tourism department."
+   ],
+   "editorNote": "Go early. By noon the thermals get bumpy.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/bir_0.jpg",
+     "shape": "4:5",
+     "credit": "UnpetitproleX",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Paragliding_at_Bir,_HP.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/bir_1.jpg",
+     "shape": "4:5",
+     "credit": "Panchkaranvarun",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Best_paragliding_in_Bir_Biling.jpg"
+    }
+   ]
+  },
+  {
+   "id": "gulmarg",
+   "name": "Ski week, Gulmarg",
+   "place": "Gulmarg, Kashmir",
+   "country": "India",
+   "categories": [
+    "Travel",
+    "Fitness"
+   ],
+   "activities": [
+    "Skiing",
+    "Snow"
+   ],
+   "bestMonths": "Jan – Mar",
+   "expectedMonth": "2027-02",
+   "nights": 6,
+   "cost": 55000,
+   "costSplit": {
+    "flights": 30,
+    "stay": 35,
+    "experience": 25,
+    "food": 10
+   },
+   "hooks": [
+    "Learn to ski without leaving the country.",
+    "Pine forest, powder and kahwa between runs.",
+    "First turns on day three, first full run by day six."
+   ],
+   "tips": [
+    "The gondola runs in two phases. Phase two goes much higher.",
+    "Beginners book an instructor for the first three days.",
+    "Rent gear in Gulmarg rather than flying with it."
+   ],
+   "editorNote": "Day one is all falling. Day three is when it clicks.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/gulmarg_0.jpg",
+     "shape": "4:5",
+     "credit": "Sanjay Kodain Mountaineer",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Iism_gulmarg.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/gulmarg_1.jpg",
+     "shape": "4:5",
+     "credit": "Codik",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Gulmarg.JPG"
+    },
+    {
+     "kind": "photo",
+     "src": "media/gulmarg_2.jpg",
+     "shape": "4:5",
+     "credit": "Didhity",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:GulmargGondola.jpg"
+    }
+   ]
+  },
+  {
+   "id": "trishuli",
+   "name": "Rafting the Trishuli",
+   "place": "Trishuli River, Nepal",
+   "country": "Nepal",
+   "categories": [
+    "Travel",
+    "Fitness"
+   ],
+   "activities": [
+    "Rafting"
+   ],
+   "bestMonths": "Oct – Dec, Mar – May",
+   "expectedMonth": "2027-04",
+   "nights": 3,
+   "cost": 30000,
+   "costSplit": {
+    "flights": 45,
+    "stay": 25,
+    "experience": 20,
+    "food": 10
+   },
+   "hooks": [
+    "Your first rapids, a few hours from Kathmandu.",
+    "Helmets on, paddles up, here we go.",
+    "A riverside camp and a whole day on the water."
+   ],
+   "tips": [
+    "The Trishuli is a classic first river, a few hours' drive from Kathmandu.",
+    "Rafting runs outside the monsoon months.",
+    "Guides run a safety briefing on the bank before anyone gets in."
+   ],
+   "editorNote": "Wear clothes you are happy to soak. You will.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/trishuli_0.jpg",
+     "shape": "4:5",
+     "credit": "Bijay Chaurasia",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Demonstration_Before_Raft-Rafting_in_Trishuli_River,_Nepal-3060.jpg"
+    }
+   ]
+  },
+  {
+   "id": "monaco",
+   "name": "Monaco Grand Prix",
+   "place": "Monte Carlo, Monaco",
+   "country": "Monaco",
+   "categories": [
+    "Sports"
+   ],
+   "activities": [
+    "F1"
+   ],
+   "bestMonths": "Usually late May or June",
+   "expectedMonth": "2027-06",
+   "nights": 4,
+   "cost": 320000,
+   "costSplit": {
+    "flights": 25,
+    "stay": 35,
+    "experience": 35,
+    "food": 5
+   },
+   "hooks": [
+    "Formula 1 through the streets, close enough to feel it.",
+    "The harbour, the tunnel, the hairpin. Every lap.",
+    "Grandstand seats, a terrace lunch, then race day."
+   ],
+   "tips": [
+    "Grandstand tickets sell out months ahead. Hillside spots are cheaper and still have a view.",
+    "Stay in Nice and take the train in. Monaco hotels triple on race weekend.",
+    "Qualifying day is half the price of race day and almost as loud."
+   ],
+   "editorNote": "Bring ear plugs. You hear the cars long before you see them.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/monaco_0.jpg",
+     "shape": "4:5",
+     "credit": "Andrew Locking",
+     "licence": "CC BY 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Hamilton_-_2016_Monaco_GP_02.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/monaco_1.jpg",
+     "shape": "4:5",
+     "credit": "Matthew Lamb",
+     "licence": "CC BY-SA 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:MONGP2016_0526_102947AA_(27323825676).jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/monaco_2.jpg",
+     "shape": "4:5",
+     "credit": "Mariom990",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Ericsson_2014_Monaco_Grand_Prix.jpg"
+    }
+   ]
+  },
+  {
+   "id": "indpak",
+   "name": "India v Pakistan, 2027 World Cup",
+   "place": "South Africa, Zimbabwe and Namibia",
+   "country": "South Africa",
+   "categories": [
+    "Sports"
+   ],
+   "activities": [
+    "Cricket"
+   ],
+   "bestMonths": "Oct – Nov 2027",
+   "expectedMonth": "2027-10",
+   "nights": 5,
+   "cost": 140000,
+   "costSplit": {
+    "flights": 45,
+    "stay": 25,
+    "experience": 25,
+    "food": 5
+   },
+   "hooks": [
+    "The loudest stadium you will ever sit in.",
+    "Blue on one side, green on the other.",
+    "Take the squad. Split the tickets."
+   ],
+   "tips": [
+    "Fixtures and ticket ballots come from the ICC. Sign up for alerts early.",
+    "Big group matches sell out fast. Keep a backup match in mind.",
+    "Book flights once the fixture is confirmed, not before."
+   ],
+   "editorNote": "Wear your colours. Strangers become family by the second innings.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/indpak_0.jpg",
+     "shape": "4:5",
+     "credit": "Kaila5hravi",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Panorama_View_During_India_VS_Pakistan_ODI_Match.jpg",
+     "note": "Archive photo from an earlier India v Pakistan match"
+    },
+    {
+     "kind": "photo",
+     "src": "media/indpak_1.jpg",
+     "shape": "4:5",
+     "credit": "wonker",
+     "licence": "CC BY 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:India_vs_Pakistan_@_Edgbaston_(9393429152).jpg",
+     "note": "Archive photo from an earlier India v Pakistan match"
+    }
+   ]
+  },
+  {
+   "id": "wimbledon",
+   "name": "A day at Wimbledon",
+   "place": "London, United Kingdom",
+   "country": "United Kingdom",
+   "categories": [
+    "Sports"
+   ],
+   "activities": [
+    "Tennis"
+   ],
+   "bestMonths": "Late Jun – mid Jul",
+   "expectedMonth": "2027-07",
+   "nights": 5,
+   "cost": 240000,
+   "costSplit": {
+    "flights": 45,
+    "stay": 35,
+    "experience": 15,
+    "food": 5
+   },
+   "hooks": [
+    "Grass courts, strawberries, the quiet before a serve.",
+    "Centre Court on a summer evening.",
+    "Five days in London, one day you will remember."
+   ],
+   "tips": [
+    "Most tickets go through a public ballot that opens months before.",
+    "The Queue gets you same-day tickets if you are ready to camp.",
+    "Ground passes are the cheapest way in and cover the outside courts."
+   ],
+   "editorNote": "Stay late. The evening light on the grass is the best seat.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/wimbledon_0.jpg",
+     "shape": "4:5",
+     "credit": "Paul Gillett",
+     "licence": "CC BY-SA 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Wimbledon_Centre_Court_-_geograph.org.uk_-_4872701.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/wimbledon_1.jpg",
+     "shape": "4:5",
+     "credit": "Bonoahx",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Entrance_to_The_Championships,_Wimbledon.jpg"
+    }
+   ]
+  },
+  {
+   "id": "berlin",
+   "name": "Run the Berlin Marathon",
+   "place": "Berlin, Germany",
+   "country": "Germany",
+   "categories": [
+    "Fitness"
+   ],
+   "activities": [
+    "Running"
+   ],
+   "bestMonths": "Late September",
+   "expectedMonth": "2027-09",
+   "nights": 5,
+   "cost": 160000,
+   "costSplit": {
+    "flights": 40,
+    "stay": 35,
+    "experience": 15,
+    "food": 10
+   },
+   "hooks": [
+    "42 km, flat and fast, through the Brandenburg Gate.",
+    "The race people pick for a personal best.",
+    "A training block with a finish line in Berlin."
+   ],
+   "tips": [
+    "Entry is mostly by ballot. Charity and tour places are the other way in.",
+    "The course is flat and fast, good for a personal best.",
+    "Arrive two days early to collect your bib at the expo."
+   ],
+   "editorNote": "The Brandenburg Gate in the last kilometre makes the training worth it.",
+   "media": [
+    {
+     "kind": "video",
+     "src": "media/berlin.mp4",
+     "poster": "media/berlin_poster.jpg",
+     "credit": "U.S. Army video by Sgt. Sarla Dominguez",
+     "licence": "Public domain",
+     "source": "https://commons.wikimedia.org/wiki/File:52nd_Annual_Berlin_Marathon_(1028332).webm"
+    },
+    {
+     "kind": "photo",
+     "src": "media/berlin_0.jpg",
+     "shape": "4:5",
+     "credit": "Denis Barthel",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Berlin-Marathon_2015_Runners_14.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/berlin_1.jpg",
+     "shape": "4:5",
+     "credit": "Denis Barthel",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Berlin-Marathon_2015_Runners_53.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/berlin_2.jpg",
+     "shape": "9:16",
+     "credit": "Denis Barthel",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Berlin-Marathon_2015_Runners_33.jpg"
+    }
+   ]
+  },
+  {
+   "id": "yoga",
+   "name": "Yoga week in Rishikesh",
+   "place": "Rishikesh, Uttarakhand",
+   "country": "India",
+   "categories": [
+    "Fitness",
+    "Lifestyle"
+   ],
+   "activities": [
+    "Yoga"
+   ],
+   "bestMonths": "Feb – Apr",
+   "expectedMonth": "2027-03",
+   "nights": 7,
+   "cost": 28000,
+   "costSplit": {
+    "flights": 25,
+    "stay": 40,
+    "experience": 25,
+    "food": 10
+   },
+   "hooks": [
+    "Seven mornings by the Ganga.",
+    "Mat, river, mountains. Repeat.",
+    "A reset week that costs less than a weekend in Goa."
+   ],
+   "tips": [
+    "The International Yoga Festival usually runs in early March.",
+    "Ashram stays are simple and often include meals.",
+    "Keep one evening for the Ganga aarti at Triveni Ghat."
+   ],
+   "editorNote": "Go for the mornings. The river is quietest at dawn.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/yoga_0.jpg",
+     "shape": "4:5",
+     "credit": "Ramsanmacs17",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Yoga_Teacher_Training_Rishikesh_India_.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/yoga_1.jpg",
+     "shape": "4:5",
+     "credit": "Shivatattvayoga",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Yoga_Teacher_Training_India_-_Shiva_Tattva_Yoga,_Rishikesh_.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/yoga_2.jpg",
+     "shape": "4:5",
+     "credit": "Yogasadhanaguru",
+     "licence": "CC BY 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Kundalini_Yoga_Teacher_Training_in_Rishikesh.jpg"
+    }
+   ]
+  },
+  {
+   "id": "pasta",
+   "name": "Pasta school in Bologna",
+   "place": "Bologna, Italy",
+   "country": "Italy",
+   "categories": [
+    "Lifestyle"
+   ],
+   "activities": [
+    "Cooking"
+   ],
+   "bestMonths": "Apr – Jun, Sep – Oct",
+   "expectedMonth": "2027-04",
+   "nights": 5,
+   "cost": 130000,
+   "costSplit": {
+    "flights": 40,
+    "stay": 35,
+    "experience": 15,
+    "food": 10
+   },
+   "hooks": [
+    "Learn tortellini from someone's nonna.",
+    "Flour, eggs, a rolling pin and five slow days.",
+    "Cook it in the morning, eat it at lunch."
+   ],
+   "tips": [
+    "Classes teach tortellini and tagliatelle by hand, no machines.",
+    "Book a market walk the same morning.",
+    "Bologna is an easy base for Parma and Modena day trips."
+   ],
+   "editorNote": "Flour gets everywhere. Wear something you do not love.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/pasta_0.jpg",
+     "shape": "9:16",
+     "credit": "Wittylama",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Making_tortellini.jpg",
+     "note": "Illustrative photo"
+    },
+    {
+     "kind": "photo",
+     "src": "media/pasta_1.jpg",
+     "shape": "4:5",
+     "credit": "cyclonebill",
+     "licence": "CC BY-SA 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_cyclonebill_-_Tortellini_med_gorgonzola_og_pinjekerner.jpg",
+     "note": "Illustrative photo"
+    }
+   ]
+  },
+  {
+   "id": "blockprint",
+   "name": "Block printing in Jaipur",
+   "place": "Jaipur, Rajasthan",
+   "country": "India",
+   "categories": [
+    "Lifestyle"
+   ],
+   "activities": [
+    "Craft"
+   ],
+   "bestMonths": "Oct – Mar",
+   "expectedMonth": "2027-01",
+   "nights": 3,
+   "cost": 22000,
+   "costSplit": {
+    "flights": 30,
+    "stay": 35,
+    "experience": 25,
+    "food": 10
+   },
+   "hooks": [
+    "Carve a block, print your own scarf.",
+    "Indigo hands for three days.",
+    "A craft older than the city around it."
+   ],
+   "tips": [
+    "Bagru and Sanganer, just outside Jaipur, are where the printers work.",
+    "Workshops let you carve a block and print your own fabric.",
+    "The Anokhi Museum of Hand Printing in Amber is a good first stop."
+   ],
+   "editorNote": "Your first print will smudge. Keep it anyway.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/blockprint_0.jpg",
+     "shape": "4:5",
+     "credit": "Ketayun, Katz",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Printing_with_Hand_Carved_Block.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/blockprint_1.jpg",
+     "shape": "4:5",
+     "credit": "Ketayun, Katz",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Anokhi_Hand_Block.jpg"
+    },
+    {
+     "kind": "photo",
+     "src": "media/blockprint_2.jpg",
+     "shape": "9:16",
+     "credit": "Ketayun, Katz",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Hand_Printing_with_wooden_block.jpg"
+    }
+   ]
+  },
+  {
+   "id": "omakase",
+   "name": "Omakase in Tokyo",
+   "place": "Tokyo, Japan",
+   "country": "Japan",
+   "categories": [
+    "Lifestyle"
+   ],
+   "activities": [
+    "Food"
+   ],
+   "bestMonths": "Mar – May, Oct – Nov",
+   "expectedMonth": "2027-04",
+   "nights": 6,
+   "cost": 190000,
+   "costSplit": {
+    "flights": 35,
+    "stay": 35,
+    "experience": 20,
+    "food": 10
+   },
+   "hooks": [
+    "Twenty pieces, one counter, chef's choice.",
+    "The best meal of your life, one bite at a time.",
+    "A week of Tokyo built around one dinner."
+   ],
+   "tips": [
+    "Top counters book out months ahead, often through a concierge or booking app.",
+    "Arrive on time. Seatings start together.",
+    "Lunch omakase costs far less than dinner at the same counter."
+   ],
+   "editorNote": "Eat each piece the moment it lands. That is the whole etiquette.",
+   "media": [
+    {
+     "kind": "photo",
+     "src": "media/omakase_0.jpg",
+     "shape": "4:5",
+     "credit": "City Foodsters",
+     "licence": "CC BY 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Sushi_Chefs_at_work_(12734419843).jpg",
+     "note": "Illustrative photo"
+    },
+    {
+     "kind": "photo",
+     "src": "media/omakase_1.jpg",
+     "shape": "4:5",
+     "credit": "City Foodsters",
+     "licence": "CC BY 2.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Chef_Ishikawa_Cutting_Fish_(12007739074).jpg",
+     "note": "Illustrative photo"
+    }
+   ]
+  }
+ ],
+ "friends": [
+  {
+   "id": "riya",
+   "name": "Riya",
+   "colour": "#FFB679",
+   "free": "Free Jan to Mar"
+  },
+  {
+   "id": "kabir",
+   "name": "Kabir",
+   "colour": "#B39DFF",
+   "free": "Free in Dec and Apr"
+  },
+  {
+   "id": "meera",
+   "name": "Meera",
+   "colour": "#7FD1A8",
+   "free": "Long weekends only"
+  },
+  {
+   "id": "dev",
+   "name": "Dev",
+   "colour": "#FF9A8A",
+   "free": "Free in Feb"
+  }
+ ]
+}

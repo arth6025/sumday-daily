@@ -6,8 +6,9 @@ Every morning at 6am, members open a fresh feed of travel, sports, fitness and l
 
 | | |
 | --- | --- |
-| Status | Concept prototype done. Ready to plan the build. |
+| Status | Prototype and a working Node.js + React demo build. Ready to plan the real build. |
 | Prototype | [Open the clickable prototype](https://claude.ai/artifact/MiZ3viaGyCBfV6nWUM2BnP) · or [`prototype/`](prototype/) in this repo* |
+| Working app | [`app/`](app/README.md): Node.js API + React web app with the multi-algorithm feed |
 | Feed plan | [How the real feed works](https://claude.ai/artifact/P43pNBzeBAsSwDC4ogSrVk): sources, pipeline, ranking, cost |
 | sumday app | [sumday.in/v4](https://sumday.in/v4): the app the vision board hands off to |
 | Owner | Arvind |
@@ -22,6 +23,8 @@ Every morning at 6am, members open a fresh feed of travel, sports, fitness and l
 3. **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).** Systems, data, partners and APIs. For engineering.
 4. **[docs/AI-MODEL.md](docs/AI-MODEL.md).** How the feed learns what each member wants, and where AI is and isn't allowed. For engineering and data.
 5. **[docs/LAUNCH-PLAN.md](docs/LAUNCH-PLAN.md).** Phases, team, partners, compliance steps, budget and the launch checklist. For whoever runs the build.
+6. **[app/](app/README.md).** A working Node.js + React build: the feed with eight ranking algorithms that learn in real time, an algorithm lab, the vision board and the sumday dashboard. Run it with `npm install && npm run dev`.
+7. **[docs/ROADMAP-RECSYS.md](docs/ROADMAP-RECSYS.md).** How the feed grows into a TikTok-grade, real-time recommender, and a 5-minute founder demo script.
 
 ## The problem
 
