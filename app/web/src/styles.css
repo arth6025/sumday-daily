@@ -220,3 +220,10 @@ main { min-width: 0; display: flex; justify-content: center; padding: 22px 16px 
   .dsd { grid-template-columns: 90px 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .burst, .track { animation: none; transition: none; } }
+.preds { display: flex; flex-wrap: wrap; gap: 6px; }
+.preds span { font-family: var(--mono); font-size: 11px; border: 1px solid rgba(139, 124, 252, 0.35); border-radius: 99px; padding: 2px 8px; color: #b39dff; }
+.sess { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.sess div { background: var(--ink2); border-radius: 8px; padding: 6px; display: flex; flex-direction: column; }
+.sess b { font-size: 16px; }
+.sess span { font-size: 10px; color: var(--tan); }
+.rescue { margin: 0; font-size: 12.5px; color: var(--glow); background: rgba(240, 129, 72, 0.12); border-radius: 8px; padding: 8px 10px; }

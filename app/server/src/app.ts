@@ -4,6 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildFeed, editionSeed, type Catalogue } from './feed/index.js';
 import { buildProfile, topInterests } from './feed/profile.js';
+import { sessionStats } from './feed/session.js';
 import { SCORERS } from './feed/scorers.js';
 import { buildPlan } from './plan.js';
 import { monthsBetween, shiftMonth } from './feed/vectors.js';
@@ -56,6 +57,7 @@ export function createApp(cat: Catalogue, store = new Store()) {
       cursor: num(q.cursor) ?? 0,
       limit: num(q.limit) ?? 10,
       recent: q.recent ? String(q.recent).split(',').slice(-6) : [],
+      lite: q.lite === '1',
     });
     res.json({
       ...result,
@@ -64,6 +66,8 @@ export function createApp(cat: Catalogue, store = new Store()) {
         format: s.format,
         score: round(s.finalScore),
         relevance: round(s.score),
+        value: round(s.value),
+        predictions: s.predictions,
         reasons: s.reasons,
         breakdown: s.breakdown.map((b) => ({ ...b, score: round(b.score), weight: round(b.weight), contribution: round(b.contribution) })),
         experience: s.experience,
@@ -81,7 +85,7 @@ export function createApp(cat: Catalogue, store = new Store()) {
     }
     store.save();
     const p = buildProfile(m, cat.byId);
-    res.json({ ok: true, profile: { strength: round(p.strength), top: topInterests(p) } });
+    res.json({ ok: true, profile: { strength: round(p.strength), top: topInterests(p) }, session: sessionStats(m) });
   });
 
   app.get('/api/profile', (req, res) => {

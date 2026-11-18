@@ -18,6 +18,7 @@ export function App() {
   const [open, setOpen] = useState<string | null>(null);
   const [plan, setPlan] = useState<Plan | null>(null);
   const [profile, setProfile] = useState<FeedPage['profile'] | null>(null);
+  const [session, setSession] = useState<FeedPage['session'] | null>(null);
   const [showWhy, setShowWhy] = useState(false);
   const [labOpen, setLabOpen] = useState(true);
   const [toast, setToast] = useState('');
@@ -55,6 +56,7 @@ export function App() {
   );
 
   const onProfile = useCallback((p: FeedPage['profile']) => setProfile(p), []);
+  const onSession = useCallback((s: FeedPage['session']) => setSession(s), []);
 
   if (error) return <div className="boot">Couldn't reach the API: {error}. Start it with <code>npm run dev</code> in <code>app/</code>.</div>;
   if (!catalogue) return <div className="boot">Loading today's drop…</div>;
@@ -81,6 +83,7 @@ export function App() {
             onHeart={onHeart}
             onOpen={setOpen}
             onProfile={onProfile}
+            onSession={onSession}
             refreshKey={refreshKey}
           />
         )}
@@ -94,6 +97,7 @@ export function App() {
           weights={query.weights ?? Object.fromEntries(algorithms.map((a) => [a.id, a.defaultWeight]))}
           lambda={query.lambda ?? 0.72}
           profile={profile}
+          session={session}
           showWhy={showWhy}
           setShowWhy={setShowWhy}
           onWeights={(w, lambda) => setQuery({ ...query, weights: w, lambda })}

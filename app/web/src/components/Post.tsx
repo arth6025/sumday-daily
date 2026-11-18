@@ -17,6 +17,8 @@ interface Props {
  * One post. It also measures attention: how long it was on screen (dwell) or
  * whether it was scrolled past in under a second (skip). Both feed the ranker.
  */
+const pct = (n: number) => `${Math.round(n * 100)}%`;
+
 export function Post({ item, hearted, friends, showWhy, onHeart, onOpen, onSignal, onHide }: Props) {
   const e = item.experience;
   const ref = useRef<HTMLElement>(null);
@@ -167,6 +169,14 @@ export function Post({ item, hearted, friends, showWhy, onHeart, onOpen, onSigna
         <div className="why">
           <div className="whyhead"><span className="mono">Why this card</span><b>score {item.relevance.toFixed(2)}</b></div>
           {item.reasons.length ? <p>{item.reasons.join(' · ')}</p> : <p>Mostly quality and popularity, while we learn what you like.</p>}
+          <div className="preds">
+            <span title="Chance you'll heart it">♥ {pct(item.predictions.heart)}</span>
+            <span title="Chance you'll tag a friend">✦ jam {pct(item.predictions.jam)}</span>
+            <span title="Chance you'll stay 3 seconds or more">stay {pct(item.predictions.dwell)}</span>
+            <span title="Chance you'll scroll past">skip {pct(item.predictions.skip)}</span>
+            <span title="Expected seconds on screen">~{item.predictions.staySeconds}s</span>
+          </div>
+          <span className="mono muted">The eight algorithms below</span>
           {item.breakdown.filter((b) => b.weight > 0).map((b) => (
             <div key={b.id} className="wrow">
               <span>{b.name}</span>

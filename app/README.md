@@ -39,13 +39,15 @@ app/
         profile.ts        Live interest profile from events (weights + 7-day half-life)
         population.ts     Simulated members for collaborative filtering and popularity
         scorers.ts        The eight ranking algorithms and cold-start weighting
+        predict.ts        Multi-task predictions: skip, stay, heart, jam, seconds
+        session.ts        Session counters (1 min, 3 min, session) and the skip-streak mode
         rank.ts           Blend, then re-rank: MMR diversity, editor rules, feed rhythm
         index.ts          buildFeed(): the whole pipeline for one page
       plan.ts             Vision board and sumday maths: shares, provisions, chart
       store.ts            Catalogue loader and a file-backed member store
       app.ts              REST API
       data/seed.json      29 experiences, 87 photos and videos with credits
-    test/                 node:test suites (14 tests)
+    test/                 node:test suites (18 tests)
   web/                    React 18 + Vite + TypeScript
     src/
       components/
@@ -81,8 +83,9 @@ The member is picked by the `x-member` header (default `you`). Real auth replace
 
 1. **Candidates:** the catalogue, minus filters and anything marked "not for me".
 2. **Score:** eight scorers each return 0–1 and a reason. Weights blend them; new members lean on popularity and quality.
-3. **Re-rank:** MMR for variety, then the editor's rules (no repeat within 4, country runs, 1 in 4 under ₹25,000) and the rhythm of formats (video, carousel, post, reel).
-4. **Learn:** every event updates the profile, and the next page uses it.
+3. **Predict:** five outcomes per card (skip, 3-second stay, heart, jam, seconds on screen), combined into a value that counts 40% of the rank.
+4. **Re-rank:** MMR for variety, then the editor's rules (no repeat within 4, country runs, 1 in 4 under ₹25,000) and the rhythm of formats (video, carousel, post, reel).
+5. **Learn:** every event updates the profile, and the next page uses it. A streak of fast skips switches on extra variety.
 
 See [docs/ROADMAP-RECSYS.md](../docs/ROADMAP-RECSYS.md) for how this grows into a learned, real-time system, and [docs/AI-MODEL.md](../docs/AI-MODEL.md) for the model plan.
 

@@ -6,6 +6,7 @@ interface Props {
   weights: Record<string, number>;
   lambda: number;
   profile: FeedPage['profile'] | null;
+  session: FeedPage['session'] | null;
   showWhy: boolean;
   setShowWhy: (v: boolean) => void;
   onWeights: (w: Record<string, number>, lambda: number) => void;
@@ -16,7 +17,7 @@ interface Props {
  * The algorithm lab: for demos and for tuning. Shows the member's live interest
  * profile and lets you change how much each ranking algorithm counts.
  */
-export function Lab({ algorithms, weights, lambda, profile, showWhy, setShowWhy, onWeights, onReset }: Props) {
+export function Lab({ algorithms, weights, lambda, profile, session, showWhy, setShowWhy, onWeights, onReset }: Props) {
   const max = Math.max(0.01, ...(profile?.top.map((t) => t.weight) ?? [0]));
   return (
     <aside className="lab">
@@ -33,6 +34,17 @@ export function Lab({ algorithms, weights, lambda, profile, showWhy, setShowWhy,
           <p className="fine">Nothing yet. Heart a few things.</p>
         )}
         <small className="fine">Signal strength {profile?.strength ?? 0}</small>
+      </div>
+
+      <div className="labsec">
+        <span className="mono">This session</span>
+        <div className="sess">
+          <div><b>{session?.shown1m ?? 0}</b><span>seen, 1 min</span></div>
+          <div><b>{session?.shown3m ?? 0}</b><span>seen, 3 min</span></div>
+          <div><b>{session?.skipped3m ?? 0}</b><span>skipped, 3 min</span></div>
+          <div><b>{session?.heartsSession ?? 0}</b><span>hearts</span></div>
+        </div>
+        {session?.rescue ? <p className="rescue">{session.note}</p> : <small className="fine">Skip three cards fast and the feed switches to more variety.</small>}
       </div>
 
       <div className="labsec">

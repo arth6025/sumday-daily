@@ -1,13 +1,24 @@
 import type { Experience, Filters, Format } from '../types.js';
 import { coldStartAdjust, SCORERS, type ScoreContext, type Weights } from './scorers.js';
 import { cosine, itemVector, priceBand } from './vectors.js';
+import { predict, value, type Predictions } from './predict.js';
+import type { SessionStats } from './session.js';
 
 export interface Scored {
   experience: Experience;
   score: number;
   breakdown: { id: string; name: string; score: number; weight: number; contribution: number }[];
   reasons: string[];
+  /** Multi-task predictions: skip, dwell, heart, jam, seconds on screen. */
+  predictions: Predictions;
+  /** The predictions combined into one 0..1 value. */
+  value: number;
+  /** What the re-ranker sorts on: the scorer blend and the predicted value together. */
+  rankScore: number;
 }
+
+/** How much the predicted value counts against the scorer blend when ranking. */
+export const VALUE_SHARE = 0.4;
 
 export interface FeedSlot extends Scored {
   position: number;
@@ -32,7 +43,7 @@ export function matchesFilters(e: Experience, f: Filters, hearts: string[]): boo
 }
 
 /** Stage 1 · score every candidate with every algorithm and blend. */
-export function scoreAll(candidates: Experience[], ctx: ScoreContext, weights: Weights): Scored[] {
+export function scoreAll(candidates: Experience[], ctx: ScoreContext, weights: Weights, session: SessionStats): Scored[] {
   const w = coldStartAdjust(weights, ctx.profile.strength);
   const total = Object.values(w).reduce((a, b) => a + Math.max(0, b), 0) || 1;
   return candidates
@@ -49,14 +60,19 @@ export function scoreAll(candidates: Experience[], ctx: ScoreContext, weights: W
         .sort((a, b) => b.contribution - a.contribution)
         .slice(0, 2)
         .map((b) => b.reason as string);
+      const predictions = predict(Object.fromEntries(breakdown.map((b) => [b.id, b.score])), e, session);
+      const v = value(predictions);
       return {
         experience: e,
         score,
         breakdown: breakdown.map(({ reason: _r, ...b }) => b),
         reasons,
+        predictions,
+        value: v,
+        rankScore: (1 - VALUE_SHARE) * score + VALUE_SHARE * v,
       };
     })
-    .sort((a, b) => b.score - a.score);
+    .sort((a, b) => b.rankScore - a.rankScore);
 }
 
 export interface RerankOptions {
@@ -67,6 +83,8 @@ export interface RerankOptions {
   /** Global position of the first slot (keeps the rhythm across pages). */
   startPosition: number;
   limit: number;
+  /** Slow connection or data saver: no autoplay video. */
+  lite?: boolean;
 }
 
 /**
@@ -108,7 +126,7 @@ export function rerank(scored: Scored[], opts: RerankOptions, now = new Date()):
         const sameCountryRun = lastCountries.length === 2 && lastCountries.every((c) => c === s.experience.country);
         const maxSim = Math.max(0, ...window.map((r) => (vec.get(r) ? cosine(vec.get(id)!, vec.get(r)!) : 0)));
         const repeatPenalty = (shown.get(id) ?? 0) * 0.15;
-        const val = opts.lambda * s.score - (1 - opts.lambda) * maxSim - repeatPenalty - (sameCountryRun ? 0.2 : 0);
+        const val = opts.lambda * s.rankScore - (1 - opts.lambda) * maxSim - repeatPenalty - (sameCountryRun ? 0.2 : 0);
         if (val > bestVal) {
           bestVal = val;
           best = s;
@@ -119,14 +137,16 @@ export function rerank(scored: Scored[], opts: RerankOptions, now = new Date()):
     const id = best.experience.id;
     recent.push(id);
     shown.set(id, (shown.get(id) ?? 0) + 1);
-    out.push({ ...best, position: pos, format: formatFor(best.experience, pos), finalScore: bestVal });
+    out.push({ ...best, position: pos, format: formatFor(best.experience, pos, opts.lite), finalScore: bestVal });
   }
   return out;
 }
 
 /** Pick the post format for a position, falling back when the media doesn't allow it. */
-export function formatFor(e: Experience, position: number): Format {
-  const want = RHYTHM[position % RHYTHM.length];
+export function formatFor(e: Experience, position: number, lite = false): Format {
+  const rhythm = RHYTHM[position % RHYTHM.length];
+  // On a slow connection or data saver, videos wait for a tap instead of autoplaying.
+  const want: Format = lite && rhythm === 'auto' ? 'tap' : rhythm;
   const hasVideo = e.media.some((m) => m.kind === 'video');
   const hasTall = e.media.some((m) => m.shape === '9:16');
   const photos = e.media.filter((m) => m.kind === 'photo').length;

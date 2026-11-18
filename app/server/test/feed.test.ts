@@ -89,3 +89,34 @@ test('the plan chart starts at the monthly provision and the shares split with f
   assert.equal(indpak.friendsIn.length, 2);
   assert.equal(indpak.share, Math.round(indpak.cost / 3));
 });
+
+test('every card carries multi-task predictions between 0 and 1', () => {
+  const r = buildFeed(cat, { member: demoMember(), now: NOW, limit: 10 });
+  for (const s of r.items) {
+    for (const k of ['skip', 'dwell', 'heart', 'jam'] as const) assert.ok(s.predictions[k] >= 0 && s.predictions[k] <= 1, k);
+    assert.ok(s.value >= 0 && s.value <= 1);
+  }
+});
+
+test('a friend jamming raises the predicted chance of a jam', () => {
+  const m = freshMember();
+  const id = 'rhodes';
+  const before = buildFeed(cat, { member: m, now: NOW, limit: 29 }).items.find((s) => s.experience.id === id)!.predictions.jam;
+  m.jams[id] = { riya: 'in', kabir: 'in', dev: 'in' };
+  const after = buildFeed(cat, { member: m, now: NOW, limit: 29 }).items.find((s) => s.experience.id === id)!.predictions.jam;
+  assert.ok(after > before);
+});
+
+test('a skip streak switches on the variety mode', () => {
+  const m = freshMember();
+  for (let i = 0; i < 5; i++) m.events.push({ memberId: m.id, experienceId: 'monaco', action: 'skip', at: NOW.getTime() - i * 10_000 });
+  const r = buildFeed(cat, { member: m, now: NOW, limit: 5 });
+  assert.equal(r.session.rescue, true);
+  assert.ok(r.session.note);
+});
+
+test('lite mode turns autoplay into tap-to-play', () => {
+  const r = buildFeed(cat, { member: demoMember(), now: NOW, limit: 10, lite: true });
+  assert.ok(!r.items.some((s) => s.format === 'auto'));
+  assert.ok(r.items.some((s) => s.format === 'tap'));
+});

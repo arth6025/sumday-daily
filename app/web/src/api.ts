@@ -48,11 +48,34 @@ export interface Breakdown {
   contribution: number;
 }
 
+export interface Predictions {
+  skip: number;
+  dwell: number;
+  heart: number;
+  jam: number;
+  staySeconds: number;
+}
+
+export interface Session {
+  shown1m: number;
+  skipped1m: number;
+  shown3m: number;
+  skipped3m: number;
+  shownSession: number;
+  skippedSession: number;
+  heartsSession: number;
+  skipRate3m: number;
+  rescue: boolean;
+  note?: string;
+}
+
 export interface FeedItem {
   position: number;
   format: Format;
   score: number;
   relevance: number;
+  value: number;
+  predictions: Predictions;
   reasons: string[];
   breakdown: Breakdown[];
   experience: Experience;
@@ -68,6 +91,7 @@ export interface FeedPage {
   nextCursor: number | null;
   ended: boolean;
   profile: { strength: number; coldStart: boolean; top: Interest[] };
+  session: Session;
   weights: Record<string, number>;
 }
 
@@ -125,6 +149,7 @@ export interface FeedQuery {
   newToMe?: boolean;
   weights?: Record<string, number>;
   lambda?: number;
+  lite?: boolean;
 }
 
 const headers = { 'content-type': 'application/json', 'x-member': 'you' };
@@ -146,13 +171,14 @@ export const api = {
     if (q.activity) p.set('activity', q.activity);
     if (q.q) p.set('q', q.q);
     if (q.newToMe) p.set('new', '1');
+    if (q.lite) p.set('lite', '1');
     if (q.lambda !== undefined) p.set('lambda', String(q.lambda));
     for (const [k, v] of Object.entries(q.weights ?? {})) p.set(`w_${k}`, String(v));
     if (recent.length) p.set('recent', recent.slice(-6).join(','));
     return call<FeedPage>(`/api/feed?${p}`);
   },
   events: (list: { experienceId: string; action: Action }[]) =>
-    call<{ profile: { strength: number; top: Interest[] } }>('/api/events', { method: 'POST', body: JSON.stringify(list) }),
+    call<{ profile: { strength: number; top: Interest[] }; session: Session }>('/api/events', { method: 'POST', body: JSON.stringify(list) }),
   heart: (id: string) => call<{ hearts: string[] }>(`/api/hearts/${id}`, { method: 'POST' }),
   unheart: (id: string) => call<{ hearts: string[] }>(`/api/hearts/${id}`, { method: 'DELETE' }),
   detail: (id: string) => call<Detail>(`/api/experiences/${id}`),

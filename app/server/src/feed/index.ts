@@ -1,5 +1,6 @@
 import type { Experience, Filters, Friend, MemberState } from '../types.js';
 import { buildProfile, topInterests } from './profile.js';
+import { sessionStats, type SessionStats } from './session.js';
 import { matchesFilters, rerank, scoreAll, type FeedSlot } from './rank.js';
 import { defaultWeights, type ScoreContext, type Weights } from './scorers.js';
 
@@ -22,6 +23,8 @@ export interface FeedRequest {
   limit?: number;
   /** IDs shown on the previous page, so variety carries across pages. */
   recent?: string[];
+  /** Slow connection or data saver: tap-to-play instead of autoplay. */
+  lite?: boolean;
   now?: Date;
 }
 
@@ -31,6 +34,7 @@ export interface FeedResponse {
   /** True when the filter is narrow and we stopped instead of repeating. */
   ended: boolean;
   profile: { strength: number; coldStart: boolean; top: { feature: string; weight: number }[] };
+  session: SessionStats & { note?: string };
   weights: Weights;
 }
 
@@ -54,6 +58,14 @@ export function buildFeed(cat: Catalogue, req: FeedRequest): FeedResponse {
   const cursor = req.cursor ?? 0;
 
   const profile = buildProfile(member, cat.byId, now.getTime());
+  const session = sessionStats(member, now.getTime());
+  let lambda = req.lambda ?? 0.72;
+  // Lots of skips: the feed isn't landing. Mix it up and explore more, rather
+  // than doubling down or trying to hold attention.
+  if (session.rescue) {
+    lambda = Math.min(lambda, 0.5);
+    weights.exploration = (weights.exploration ?? 0) * 3 + 0.05;
+  }
   const ctx: ScoreContext = {
     member,
     profile,
@@ -72,9 +84,9 @@ export function buildFeed(cat: Catalogue, req: FeedRequest): FeedResponse {
   const cap = filtered ? Math.max(3, candidates.length * 3) : Infinity;
   const pageLimit = Math.max(0, Math.min(limit, cap - cursor));
 
-  const scored = scoreAll(candidates, ctx, weights);
+  const scored = scoreAll(candidates, ctx, weights, session);
   const items = pageLimit
-    ? rerank(scored, { lambda: req.lambda ?? 0.72, recent: req.recent ?? [], startPosition: cursor, limit: pageLimit }, now)
+    ? rerank(scored, { lambda, recent: req.recent ?? [], startPosition: cursor, limit: pageLimit, lite: req.lite }, now)
     : [];
   const next = cursor + items.length;
   const ended = !items.length || next >= cap;
@@ -84,6 +96,7 @@ export function buildFeed(cat: Catalogue, req: FeedRequest): FeedResponse {
     nextCursor: ended ? null : next,
     ended,
     profile: { strength: Math.round(profile.strength * 10) / 10, coldStart: profile.strength < 12, top: topInterests(profile) },
+    session: { ...session, note: session.rescue ? "You're skipping a lot, so we're mixing things up." : undefined },
     weights,
   };
 }

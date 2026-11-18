@@ -65,6 +65,8 @@ Once there are enough events, train a ranker to predict what each member will do
 | Tagged a friend or got an "in" | +4 |
 | Became a someday with a mandate | +8 |
 
+The app already predicts five of these outcomes per card with hand-set coefficients (`app/server/src/feed/predict.ts`). Training replaces each head with a model, one at a time.
+
 **Features:**
 
 | Group | Examples |
@@ -130,6 +132,7 @@ Once there are enough events, train a ranker to predict what each member will do
 - Keep events with a member id that can be deleted; deleting an account deletes their events from training data within 30 days.
 - Explain the feed in the app: "Picked because you hearted Spiti and Riya is in on this."
 - Review the model's top cards every week for bias: are some regions, price bands or creators never shown?
+- Never collect device or body signals for ranking: no battery, brightness, motion, activity, sleep or drowsiness signals, and no reading of messages or notes. See [ROADMAP-RECSYS §3](ROADMAP-RECSYS.md#3-what-the-tiktok-teardown-shows-and-what-we-do-with-it).
 
 ## 7. Build order (engineering tickets)
 

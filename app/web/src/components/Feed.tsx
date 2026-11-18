@@ -11,13 +11,20 @@ interface Props {
   onHeart: (id: string, on: boolean) => void;
   onOpen: (id: string) => void;
   onProfile: (p: FeedPage['profile']) => void;
+  onSession: (s: FeedPage['session']) => void;
   refreshKey: number;
 }
 
 const CATS = ['', 'Travel', 'Sports', 'Fitness', 'Lifestyle'];
 
+/** Data saver on, or a 2G/3G connection: ask the server not to autoplay video. */
+function isLite(): boolean {
+  const c = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
+  return Boolean(c?.saveData || (c?.effectiveType && /(^|-)2g|3g/.test(c.effectiveType)));
+}
+
 /** The endless feed: pages of 10, re-ranked on every page with the latest profile. */
-export function Feed({ catalogue, query, setQuery, hearts, showWhy, onHeart, onOpen, onProfile, refreshKey }: Props) {
+export function Feed({ catalogue, query, setQuery, hearts, showWhy, onHeart, onOpen, onProfile, onSession, refreshKey }: Props) {
   const [items, setItems] = useState<FeedItem[]>([]);
   const [cursor, setCursor] = useState<number | null>(0);
   const [loading, setLoading] = useState(false);
@@ -34,10 +41,11 @@ export function Feed({ catalogue, query, setQuery, hearts, showWhy, onHeart, onO
       setLoading(true);
       try {
         const recent = reset ? [] : items.slice(-6).map((i) => i.experience.id);
-        const page = await api.feed(query, from, recent);
+        const page = await api.feed({ ...query, lite: isLite() }, from, recent);
         setItems((prev) => (reset ? page.items : [...prev, ...page.items]));
         setCursor(page.nextCursor);
         onProfile(page.profile);
+        onSession(page.session);
         setError('');
       } catch (err) {
         setError((err as Error).message);
@@ -45,7 +53,7 @@ export function Feed({ catalogue, query, setQuery, hearts, showWhy, onHeart, onO
         setLoading(false);
       }
     },
-    [cursor, items, loading, onProfile, query],
+    [cursor, items, loading, onProfile, onSession, query],
   );
 
   // New query or new weights: start the feed again.
@@ -75,12 +83,13 @@ export function Feed({ catalogue, query, setQuery, hearts, showWhy, onHeart, onO
       try {
         const r = await api.events(batch);
         onProfile({ strength: r.profile.strength, coldStart: r.profile.strength < 12, top: r.profile.top });
+        onSession(r.session);
       } catch {
         pending.current.unshift(...batch);
       }
     }, 2000);
     return () => window.clearInterval(t);
-  }, [onProfile]);
+  }, [onProfile, onSession]);
 
   const hide = (id: string) => {
     onSignal(id, 'not_interested');
